@@ -1,0 +1,90 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #023852;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+.wrapper {
+	max-width: 1024px;
+	width: 90%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+main#main-wrapper {
+	margin-top: 80px;
+	height: 600px;
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: scroll;  /* auto| hidden| */
+}
+
+nav {
+	background-color: white;
+	color: firebrick;
+	height: 36px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	border-bottom: 5px solid firebrick;
+	z-index: 1;
+	text-align: center;
+
+}
+
+/*nav ul li a {
+	color: firebrick;
+
+}*/
+nav a {
+	color: firebrick;
+}
+
+::selection {
+	background-color: red;
+}
+
+nav li {
+	float: left;
+	width: 20%;
+	list-style: none;
+	height: 100%;
+	display: block;
+
+}
+nav li ul li {
+	background-color: white;
+	float: left;
+	top: 11px;
+	position: relative;
+	color: firebrick;
+}
+
+nav li > ul {
+	display: none;
+}
+nav li:hover > ul {
+	display: block;
+}
+nav li a {
+	display: block;
+	height: 31px;
+	padding: 7px;
+}
+
+nav li a:hover {
+	background-color: grey;
+	color: white;
+}
+
+nav li > ul > li {
+	width: 100%;
+
+}
